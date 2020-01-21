@@ -13,6 +13,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/iot-dashboard',
   },
   {
+    title: 'CFM Dashboard',
+    icon: 'home-outline',
+    link: '/pages/cfm-dashboard',
+  },
+  {
     title: 'FEATURES',
     group: true,
   },

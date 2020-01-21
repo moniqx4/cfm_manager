@@ -1,0 +1,38 @@
+ <nb-card>
+      <nb-card-header>League Settings</nb-card-header>
+      <nb-card-body>
+        <form (ngSubmit) ="save()" [formGroup]="settingsForm">
+
+          <div class="form-group row">
+            <label class="col-sm-3 label">Select League to Update</label>
+            <div class="col-sm-9">
+              <nb-radio-group [(value)]="radioGroupValue" formControlName="leagueName">
+                <nb-radio [value]="'MSPA'">MSPA</nb-radio>
+                <nb-radio [value]="'HML'">HML</nb-radio>
+                <nb-radio [value]="'SPC'">SPC</nb-radio>                
+              </nb-radio-group>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputCurrentSeason" class="label col-sm-3 col-form-label">Enter in Current Season:</label>
+            <div class="col-sm-9">
+              <input type="text" nbInput fullWidth id="inputSeason" placeholder="2021" formControlName="season">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputWeek" class="label col-sm-3 col-form-label">Enter in Current Week:</label>
+            <div class="col-sm-9">
+              <input type="text" nbInput fullWidth id="inputWeek" placeholder="1" formControlName="week">
+            </div>
+          </div>
+          
+          <div class="form-group row">
+            <div class="offset-sm-3 col-sm-9">
+              <button type="submit" nbButton status="primary">Update</button>
+            </div>
+          </div>
+        </form>
+      </nb-card-body>
+    </nb-card>

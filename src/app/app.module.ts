@@ -11,6 +11,13 @@ import { CoreModule } from './@core/core.module';
 import { ThemeModule } from './@theme/theme.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { firebase } from './config';
+
 import {
   NbChatModule,
   NbDatepickerModule,
@@ -20,15 +27,24 @@ import {
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
+import { AdvanceComponent } from './components/advance/advance.component';
+
+const SUPPORT_MODULES = [ 
+  AngularFireAuthModule,
+  AngularFireDatabaseModule,
+  AngularFirestoreModule,
+];
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AdvanceComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-
+    AngularFireModule.initializeApp(firebase),
+    ...SUPPORT_MODULES,
     ThemeModule.forRoot(),
 
     NbSidebarModule.forRoot(),
