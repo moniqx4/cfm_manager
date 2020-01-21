@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { LeagueSettingService, Settings } from '../../../@core/data/league-settings/league-settings.service';
-import { stringify } from 'querystring';
 
 
 @Component({
@@ -38,8 +37,8 @@ export class LeagueSettingsComponent implements OnInit {
     const week = this.settingsForm.value.week;
     const league = this.settingsForm.value.leagueName;
 
-    console.log(this.settingsForm);
-    console.log(this.settingsForm.value.season);
+    // console.log(this.settingsForm);
+    // console.log(this.settingsForm.value.season);
 
     switch (league) {
 

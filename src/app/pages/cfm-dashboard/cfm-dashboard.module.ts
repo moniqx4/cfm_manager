@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { RouterModule } from '@angular/router'; // we also need angular router for Nebular to function properly
-
 import { NgxEchartsModule } from 'ngx-echarts';
 import {
   NbActionsModule,
@@ -20,7 +18,6 @@ import {
 import { ThemeModule } from '../../@theme/theme.module';
 import { CfmDashboardComponent } from './cfm-dashboard.component';
 import { LeagueSettingsComponent } from './league-settings/league-settings.component';
-import { CoachesComponent } from './coaches/coaches.component';
 
 @NgModule({
     imports: [
@@ -43,8 +40,6 @@ import { CoachesComponent } from './coaches/coaches.component';
     declarations: [
         CfmDashboardComponent,
         LeagueSettingsComponent,
-        CoachesComponent,
     ],
   })
   export class CfmDashboardModule { }
-  
