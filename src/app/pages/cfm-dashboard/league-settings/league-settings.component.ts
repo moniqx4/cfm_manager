@@ -6,7 +6,7 @@ import { LeagueSettingService, Settings } from '../../../@core/data/league-setti
 @Component({
   selector: 'ngx-league-settings',
   templateUrl: './league-settings.component.html',
-  styleUrls: ['./league-settings.component.scss']
+  styleUrls: ['./league-settings.component.scss'],
 })
 export class LeagueSettingsComponent implements OnInit {
 
@@ -57,7 +57,7 @@ export class LeagueSettingsComponent implements OnInit {
 
 
     this.leagueSettingService.updateSettings(this.docId, season, week);
-  
+
 
   }
 

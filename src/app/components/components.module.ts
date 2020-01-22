@@ -13,7 +13,7 @@ NgModule({
   declarations: [
     AdvanceComponent,
   ],
-})
+});
 
 export class ComponentsModule { }
 

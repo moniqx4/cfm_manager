@@ -29,7 +29,7 @@ import {
 } from '@nebular/theme';
 import { AdvanceComponent } from './components/advance/advance.component';
 
-const SUPPORT_MODULES = [ 
+const SUPPORT_MODULES = [
   AngularFireAuthModule,
   AngularFireDatabaseModule,
   AngularFirestoreModule,

@@ -8,7 +8,7 @@ describe('CfmDashboardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CfmDashboardComponent ]
+      declarations: [ CfmDashboardComponent ],
     })
     .compileComponents();
   }));

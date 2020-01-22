@@ -8,7 +8,7 @@ describe('AdvanceComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdvanceComponent ]
+      declarations: [ AdvanceComponent ],
     })
     .compileComponents();
   }));

@@ -8,7 +8,7 @@ describe('LeagueSettingsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LeagueSettingsComponent ]
+      declarations: [ LeagueSettingsComponent ],
     })
     .compileComponents();
   }));

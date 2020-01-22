@@ -6,7 +6,7 @@ import { CoachTableData } from '../../@core/data/coach-table';
 @Component({
   selector: 'ngx-coach',
   templateUrl: './coach.component.html',
-  styleUrls: ['./coach.component.scss']
+  styleUrls: ['./coach.component.scss'],
 })
 export class CoachComponent {
 

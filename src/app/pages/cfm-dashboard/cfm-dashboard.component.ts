@@ -12,7 +12,7 @@ interface CardSettings {
 @Component({
   selector: 'ngx-cfm-dashboard',
   templateUrl: './cfm-dashboard.component.html',
-  styleUrls: ['./cfm-dashboard.component.scss']
+  styleUrls: ['./cfm-dashboard.component.scss'],
 })
 
 export class CfmDashboardComponent implements OnDestroy {
